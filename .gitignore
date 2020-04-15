@@ -1,0 +1,5 @@
+dist/assets/built/*
+node_modules/
+.DS_Store
+.idea/
+coverage

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "target": "es6",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitReturns": true,
+    "keyofStringsOnly": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "outDir": "build",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "rootDirs": ["src", "config"],
+    "baseUrl": "./src/",
+  },
+  "exclude": ["./dist/*", "./assets/*", "./node_modules/*", "./src/**/*.stories.tsx", ".vscode"],
+  "include": [
+    "src/**/*",
+    "types/*",
+  ]
+}

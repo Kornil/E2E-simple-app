@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Annotations /> matches snapshots 1`] = `
+.emotion-0 {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  font-family: "Quicksand",sans-serif;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

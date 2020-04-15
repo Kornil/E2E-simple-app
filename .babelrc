@@ -1,0 +1,46 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/typescript",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "useBuiltIns": "entry",
+        "corejs": "3",
+        "modules": false
+      }
+    ],
+    ["@emotion/babel-preset-css-prop", { "hoist": true }]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-export-default-from"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/react",
+        "@babel/typescript",
+        ["@emotion/babel-preset-css-prop", { "sourceMap": true, "autoLabel": true }],
+        [
+          "@babel/env",
+          {
+            "modules": "commonjs",
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    },
+    "development": {
+      "presets": [["@emotion/babel-preset-css-prop", { "sourceMap": true, "autoLabel": true }]]
+    }
+  }
+}
